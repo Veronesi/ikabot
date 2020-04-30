@@ -1,0 +1,1856 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1"/>
+    <title>
+        Ikariam -
+        Mundo Omega    </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link href="/skin/compiled-ltr-common_0.css?rev=60258"
+          rel="stylesheet" type="text/css"/>
+    <link href="/skin/compiled-ltr-common_1.css?rev=60258"
+          rel="stylesheet" type="text/css"/>
+    <link href="/skin/compiled-ar-city.css?rev=60258"
+          rel="stylesheet" type="text/css"/>
+    <link href="//gf2.geo.gfsrv.net/cdna1/cb50a0a261b6da2f6ebb7dbf6c9def.css" rel="stylesheet"
+          type="text/css"/>
+            <link href="//gf1.geo.gfsrv.net/cdn30/a7166cc3497ed5cb1bcf91062bec52.css" rel="stylesheet"
+                  type="text/css"/>
+
+        </head>
+<body id="city" class="flexible direction_ltr">
+
+
+<div id="container"
+     style="width: ; height: ; overflow-y: hidden;">
+    <span class="accesshint">Ikariam</span>
+    <span class="accesshint">Griegos, Dioses y Máquinas</span>
+        <div id="GF_toolbar">
+    <ul>
+
+        <li class="avatarName">
+            <a id="avatarPictureSmall" class=""
+               onclick="ajaxHandlerCall(this.href);return false;"
+               href="?view=avatarProfile&activeTab=tab_avatarProfile">
+                <span class="avatarPictureTouch"></span>
+            </a>
+            <a onclick="ajaxHandlerCall(this.href);return false;" class="noViewParameters"
+               href="?view=optionsAccount&page=account"
+               title="juse"> juse</a>
+        </li>
+        <li class="ikhelp">
+            <a onclick="ajaxHandlerCall(this.href);return false;" class="noViewParameters"
+               href="?view=ikipedia&helpId=0"
+               title="Ayuda"> Ayuda</a>
+        </li>
+                    <li class="premium">
+                <a id="js_premiumLinkInHeadline" class="noViewParameters"
+                   onclick="ajaxHandlerCall(this.href);return false;"
+                   href="?view=premium&linkType=1" title="Ambrosía">
+                <span class="textLabel">Ambrosía (<span
+                        id="headlineAmbrosia">32</span>)</span>
+                </a>
+            </li>
+                <li class="highscore">
+            <a onclick="ajaxHandlerCall(this.href);return false;" class="noViewParameters"
+               href="/index.php?view=highscore&showMe=1" title="Clasificación">
+                Clasificación            </a>
+        </li>
+        <li class="options">
+            <a onclick="ajaxHandlerCall(this.href);return false;" class="noViewParameters"
+               href="/index.php?view=options" title="Opciones">
+                Opciones            </a>
+        </li>
+        <li class="notes">
+            <a href="javascript:ikariam.show('avatarNotes')" title="Notas">
+                Notas            </a>
+        </li>
+        <li class="forum">
+            <a href="https://forum.ikariam.gameforge.com"
+               title="Al foro de discusión" target="_blank">
+                Foro            </a>
+        </li>
+                    <li class="">
+                <a onclick="ajaxHandlerCall(this.href);return false;" class="noViewParameters"
+                   href="?view=avatarDetails" title="Detalles de jugador">
+                    Detalles de jugador                </a>
+            </li>
+                <li class="logout">
+            <a href="/index.php?action=logoutAvatar&function=logout"
+               title="Cerrar sesión">
+                Salir            </a>
+        </li>
+                <li class="version">
+            <a onclick="ajaxHandlerCall(this.href);return false;" class="noViewParameters" href="?view=version"
+               title="Version">
+                <span
+                    title="Versión">v8.1.1</span></a>
+        </li>
+                    <li class="serverTime"><a><span id="servertime">30.04.2020 16:41:23</span></a>
+            </li>
+            </ul>
+</div>
+    <div id="header">
+                <div id="topnavi">
+
+                        <div id="topnaviResources">
+                
+<div id="globalResources">
+    <ul>
+        <li class="ambrosiaNoSpin"
+            title="32 Ambrosía">
+            <a id="js_GlobalMenu_ambrosia" class="noViewParameters" onclick="ajaxHandlerCall(this.href);return false;"
+               href="?view=premium&linkType=2">Shop </a>
+        </li>
+        <li class="inventory">
+            <a class="noViewParameters" onclick="ajaxHandlerCall(this.href);return false;" href="?view=inventory">
+                <div class="tooltip">
+                    Inventario                </div>
+            </a>
+        </li>
+        <li class="transporters" title="Barcos mercantes disponibles/total">
+            <a class="noViewParameters" onclick="ajaxHandlerCall(this.href);return false;" href="?view=merchantNavy">
+                <span id="js_GlobalMenu_freeTransporters">3</span> (<span
+                    id="js_GlobalMenu_maxTransporters">3</span>)
+            </a>
+        </li>
+        <li class="gold">
+            <a id="js_GlobalMenu_gold" class="noViewParameters" onclick="ajaxHandlerCall(this.href);return false;"
+               href="?view=finances">34,405</a>
+                    <div id="js_GlobalMenu_gold_tooltip"
+             class="tooltip"
+             style="line-height:13px;">
+            <table style="width:100%">
+                <tr class="altTooltip">
+                    <td class="smallFont">Oro:</td>
+                    <td id="js_GlobalMenu_gold_Total" class="rightText">34,406</td>
+                </tr>
+                                <tr class="altTooltip">
+                    <td class="smallFont">Ingresos:</td>
+                    <td id="js_GlobalMenu_income"  class="bold green rightText">276</td>
+                </tr>
+                <tr class="altTooltip">
+                    <td class="smallFont">Aumento de ingresos de Oro:</td>
+                    <td id="js_GlobalMenu_badTaxAccountant" class="bold green rightText">0</td>
+                </tr>
+                <tr class="altTooltip">
+                    <td class="smallFont">Investigadores:</td>
+                    <td id="js_GlobalMenu_scientistsUpkeep" class="bold red rightText">-168</td>
+                </tr>
+                <tr class="altTooltip">
+                    <td class="smallFont">Costos:</td>
+                    <td id="js_GlobalMenu_upkeep" class="bold red rightText">0</td>
+                </tr>
+                <tr class="altTooltip">
+                    <td class="smallFont">Total:</td>
+                    <td id="js_GlobalMenu_gold_Calculation" class="bold green rightText">108</td>
+                </tr>
+                                <tr>
+                    <td class="smallFont bold">
+                        Bonificaciones posibles:
+                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_gold_premiumBonus">
+                    <td class="smallFont"  style="padding-left: 10px;">
+                        Bono recompensa:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_gold_premiumBonus_value">
+                        0 %                    </td>
+                </tr>
+            </table>
+        </div>
+                </li>
+    </ul>
+</div>
+
+<div id="cityResources">
+    <ul class="resources">
+        <li id="resources_population" class="population "
+            title="Población">
+            <span id="js_GlobalMenu_citizens">56</span>
+            (<span id="js_GlobalMenu_population">250</span>)
+        </li>
+
+        <li id="js_GlobalMenu_maxActionPoints" class="actions"
+            title="Puntos de acción">4</li>
+        <li id="resources_foreign"
+            class=" invisible bold red"></li>
+                    <li id="resources_wood"
+            class="wood   "
+                            onclick="ajaxHandlerCall('?view=island&dialog=resource');return false;" style="cursor:pointer;"
+                            >
+            
+
+
+
+
+        <span id="js_GlobalMenu_wood"
+              class="">14,857</span>
+
+        <div id="js_GlobalMenu_wood_tooltip"
+             class="tooltip"
+             style="line-height:13px;">
+
+            <table  style="width:100%">
+                <tr class="altTooltip">
+                    <td class="smallFont left">
+                        en el depósito:
+                    </td>
+                    <td id="js_GlobalMenu_wood_Total" class="rightText">
+                        14,857                    </td>
+                </tr>
+
+                                    <tr class="altTooltip">
+                        <td class="smallFont">
+                            Producción por hora Madera:
+                        </td>
+                        <td id="js_GlobalMenu_resourceProduction" class="rightText">
+                            207                        </td>
+                    </tr>
+                    
+                <tr class="altTooltip">
+                    <td class="smallFont">
+                        Capacidad de almacenamiento Madera:
+                    </td>
+                    <td id="js_GlobalMenu_max_wood" class="rightText">
+                        26,500                    </td>
+                </tr>
+
+
+                <tr class="altTooltip">
+                    <td class="smallFont">
+                        Tienda:
+                    </td>
+                    <td id="js_GlobalMenu_branchOffice_wood" class="rightText">
+                        0                    </td>
+                </tr>
+
+
+                
+                
+
+                <tr id="js_GlobalMenu_production_wood_active_bonuses" class="">
+                    <td class="smallFont bold">
+                        Bonificaciones posibles:
+                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_wood_premiumBonus" class="">
+                    <td class="smallFont"  style="padding-left: 10px;">
+                        Bono recompensa:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_wood_premiumBonus_value">
+                        0 %                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_wood_adVideoBonus" class="invisible">
+                    <td class="smallFont" style="padding-left: 10px;">
+                        Teatro de Proyección:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_wood_adVideoBonus_value">
+                        0 %                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_wood_heliosTowerBonus" class="">
+                    <td class="smallFont"  style="padding-left: 10px;">
+                        Torre de Helios:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_wood_heliosTowerBonus_value">
+                        0 %                    </td>
+                </tr>
+
+            </table>
+        </div>
+        </li>
+                    <li id="resources_wine"
+            class="wine   "
+                        >
+            
+
+
+
+
+        <span id="js_GlobalMenu_wine"
+              class="">457</span>
+
+        <div id="js_GlobalMenu_wine_tooltip"
+             class="tooltip"
+             style="line-height:13px;">
+
+            <table  style="width:100%">
+                <tr class="altTooltip">
+                    <td class="smallFont left">
+                        en el depósito:
+                    </td>
+                    <td id="js_GlobalMenu_wine_Total" class="rightText">
+                        457                    </td>
+                </tr>
+
+                                    <tr class="altTooltip">
+                        <td class="smallFont">
+                            Gasto por hora:
+                        </td>
+                        <td id="js_GlobalMenu_WineConsumption" class="rightText">
+                            0                        </td>
+                    </tr>
+
+                                        <tr id="js_GlobalMenu_production_container_wine" class="altTooltip invisible">
+                        <td class="smallFont">
+                            Producción por hora Vino:
+                        </td>
+                        <td id="js_GlobalMenu_production_wine" class="rightText">
+                            0                        </td>
+                    </tr>
+
+                    
+                <tr class="altTooltip">
+                    <td class="smallFont">
+                        Capacidad de almacenamiento Vino:
+                    </td>
+                    <td id="js_GlobalMenu_max_wine" class="rightText">
+                        26,500                    </td>
+                </tr>
+
+
+                <tr class="altTooltip">
+                    <td class="smallFont">
+                        Tienda:
+                    </td>
+                    <td id="js_GlobalMenu_branchOffice_wine" class="rightText">
+                        0                    </td>
+                </tr>
+
+
+                
+                
+
+                <tr id="js_GlobalMenu_production_wine_active_bonuses" class="invisible">
+                    <td class="smallFont bold">
+                        Bonificaciones posibles:
+                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_wine_premiumBonus" class="invisible">
+                    <td class="smallFont"  style="padding-left: 10px;">
+                        Bono recompensa:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_wine_premiumBonus_value">
+                        0 %                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_wine_adVideoBonus" class="invisible">
+                    <td class="smallFont" style="padding-left: 10px;">
+                        Teatro de Proyección:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_wine_adVideoBonus_value">
+                        0 %                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_wine_heliosTowerBonus" class="invisible">
+                    <td class="smallFont"  style="padding-left: 10px;">
+                        Torre de Helios:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_wine_heliosTowerBonus_value">
+                        0 %                    </td>
+                </tr>
+
+            </table>
+        </div>
+        </li>
+                    <li id="resources_marble"
+            class="marble   "
+                        >
+            
+
+
+
+
+        <span id="js_GlobalMenu_marble"
+              class="">918</span>
+
+        <div id="js_GlobalMenu_marble_tooltip"
+             class="tooltip"
+             style="line-height:13px;">
+
+            <table  style="width:100%">
+                <tr class="altTooltip">
+                    <td class="smallFont left">
+                        en el depósito:
+                    </td>
+                    <td id="js_GlobalMenu_marble_Total" class="rightText">
+                        918                    </td>
+                </tr>
+
+                                    <tr id="js_GlobalMenu_production_container_marble" class="altTooltip invisible">
+                        <td class="smallFont">
+                            Producción por hora Mármol:
+                        </td>
+                        <td id="js_GlobalMenu_production_marble" class="rightText">
+                            0                        </td>
+                    </tr>
+
+                    
+                <tr class="altTooltip">
+                    <td class="smallFont">
+                        Capacidad de almacenamiento Mármol:
+                    </td>
+                    <td id="js_GlobalMenu_max_marble" class="rightText">
+                        26,500                    </td>
+                </tr>
+
+
+                <tr class="altTooltip">
+                    <td class="smallFont">
+                        Tienda:
+                    </td>
+                    <td id="js_GlobalMenu_branchOffice_marble" class="rightText">
+                        0                    </td>
+                </tr>
+
+
+                
+                
+
+                <tr id="js_GlobalMenu_production_marble_active_bonuses" class="invisible">
+                    <td class="smallFont bold">
+                        Bonificaciones posibles:
+                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_marble_premiumBonus" class="invisible">
+                    <td class="smallFont"  style="padding-left: 10px;">
+                        Bono recompensa:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_marble_premiumBonus_value">
+                        0 %                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_marble_adVideoBonus" class="invisible">
+                    <td class="smallFont" style="padding-left: 10px;">
+                        Teatro de Proyección:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_marble_adVideoBonus_value">
+                        0 %                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_marble_heliosTowerBonus" class="invisible">
+                    <td class="smallFont"  style="padding-left: 10px;">
+                        Torre de Helios:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_marble_heliosTowerBonus_value">
+                        0 %                    </td>
+                </tr>
+
+            </table>
+        </div>
+        </li>
+                    <li id="resources_glass"
+            class="glass   "
+                            onclick="ajaxHandlerCall('?view=island&dialog=tradegood&type=3');return false;" style="cursor:pointer;"
+                            >
+            
+
+
+
+
+        <span id="js_GlobalMenu_crystal"
+              class="">81</span>
+
+        <div id="js_GlobalMenu_crystal_tooltip"
+             class="tooltip"
+             style="line-height:13px;">
+
+            <table  style="width:100%">
+                <tr class="altTooltip">
+                    <td class="smallFont left">
+                        en el depósito:
+                    </td>
+                    <td id="js_GlobalMenu_crystal_Total" class="rightText">
+                        81                    </td>
+                </tr>
+
+                                    <tr id="js_GlobalMenu_production_container_crystal" class="altTooltip ">
+                        <td class="smallFont">
+                            Producción por hora Cristal:
+                        </td>
+                        <td id="js_GlobalMenu_production_crystal" class="rightText">
+                            0                        </td>
+                    </tr>
+
+                    
+                <tr class="altTooltip">
+                    <td class="smallFont">
+                        Capacidad de almacenamiento Cristal:
+                    </td>
+                    <td id="js_GlobalMenu_max_crystal" class="rightText">
+                        26,500                    </td>
+                </tr>
+
+
+                <tr class="altTooltip">
+                    <td class="smallFont">
+                        Tienda:
+                    </td>
+                    <td id="js_GlobalMenu_branchOffice_crystal" class="rightText">
+                        0                    </td>
+                </tr>
+
+
+                
+                
+
+                <tr id="js_GlobalMenu_production_crystal_active_bonuses" class="">
+                    <td class="smallFont bold">
+                        Bonificaciones posibles:
+                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_crystal_premiumBonus" class="">
+                    <td class="smallFont"  style="padding-left: 10px;">
+                        Bono recompensa:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_crystal_premiumBonus_value">
+                        0 %                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_crystal_adVideoBonus" class="invisible">
+                    <td class="smallFont" style="padding-left: 10px;">
+                        Teatro de Proyección:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_crystal_adVideoBonus_value">
+                        0 %                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_crystal_heliosTowerBonus" class="">
+                    <td class="smallFont"  style="padding-left: 10px;">
+                        Torre de Helios:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_crystal_heliosTowerBonus_value">
+                        0 %                    </td>
+                </tr>
+
+            </table>
+        </div>
+        </li>
+                    <li id="resources_sulfur"
+            class="sulfur   "
+                        >
+            
+
+
+
+
+        <span id="js_GlobalMenu_sulfur"
+              class="">257</span>
+
+        <div id="js_GlobalMenu_sulfur_tooltip"
+             class="tooltip"
+             style="line-height:13px;">
+
+            <table  style="width:100%">
+                <tr class="altTooltip">
+                    <td class="smallFont left">
+                        en el depósito:
+                    </td>
+                    <td id="js_GlobalMenu_sulfur_Total" class="rightText">
+                        257                    </td>
+                </tr>
+
+                                    <tr id="js_GlobalMenu_production_container_sulfur" class="altTooltip invisible">
+                        <td class="smallFont">
+                            Producción por hora Azufre:
+                        </td>
+                        <td id="js_GlobalMenu_production_sulfur" class="rightText">
+                            0                        </td>
+                    </tr>
+
+                    
+                <tr class="altTooltip">
+                    <td class="smallFont">
+                        Capacidad de almacenamiento Azufre:
+                    </td>
+                    <td id="js_GlobalMenu_max_sulfur" class="rightText">
+                        26,500                    </td>
+                </tr>
+
+
+                <tr class="altTooltip">
+                    <td class="smallFont">
+                        Tienda:
+                    </td>
+                    <td id="js_GlobalMenu_branchOffice_sulfur" class="rightText">
+                        0                    </td>
+                </tr>
+
+
+                
+                
+
+                <tr id="js_GlobalMenu_production_sulfur_active_bonuses" class="invisible">
+                    <td class="smallFont bold">
+                        Bonificaciones posibles:
+                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_sulfur_premiumBonus" class="invisible">
+                    <td class="smallFont"  style="padding-left: 10px;">
+                        Bono recompensa:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_sulfur_premiumBonus_value">
+                        0 %                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_sulfur_adVideoBonus" class="invisible">
+                    <td class="smallFont" style="padding-left: 10px;">
+                        Teatro de Proyección:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_sulfur_adVideoBonus_value">
+                        0 %                    </td>
+                </tr>
+                <tr id="js_GlobalMenu_production_sulfur_heliosTowerBonus" class="invisible">
+                    <td class="smallFont"  style="padding-left: 10px;">
+                        Torre de Helios:
+                    </td>
+                    <td class="rightText" id="js_GlobalMenu_production_sulfur_heliosTowerBonus_value">
+                        0 %                    </td>
+                </tr>
+
+            </table>
+        </div>
+        </li>
+            </ul>
+</div>
+            </div>
+
+                        <div id="cityNav">
+                <form id="changeCityForm" onsubmit="ajaxHandlerCallFromForm(this);return false;" method="post">
+                    <input type="hidden" name="action" value="header"/>
+                    <input type="hidden" name="function" value="changeCurrentCity"/>
+                    <input type="hidden" id="js_ChangeCityActionRequest" name="actionRequest"
+                           value="34408f08214bde3ad0bac01cbcacc1ac"/>
+                    <input type="hidden" name="oldView" value="city"/>
+                    <input id="js_cityIdOnChange" type="hidden" name="cityId" value="0"/>
+                    <div id="js_citySelectContainer" class="select_container city_select shorten_text"></div>
+
+                            <div class="city_nav_button viewWorldmap" id=js_worldMapLink >
+            <a class="smallFont" onclick="ajaxHandlerCall(this.href);return false;"  href="?view=worldmap_iso" tabindex="4" title="Centrar mapa del mundo sobre la ciudad elegida">
+                Mostrar mundo            </a>
+        </div>
+            <div class="city_nav_button viewIsland" id=js_islandLink >
+            <a class="smallFont" onclick="ajaxHandlerCall(this.href);return false;"  href="?view=island" tabindex="5" title="Ir al mapa de la isla de la ciudad elegida">
+                Mostrar isla            </a>
+        </div>
+            <div class="city_nav_button viewCity" id=js_cityLink >
+            <a class="smallFont" onclick="ajaxHandlerCall(this.href);return false;"  href="?view=city" tabindex="6" title="Observar ciudad elegida">
+                Mostrar ciudad            </a>
+        </div>
+                    </form>
+            </div>
+        </div>
+
+                <div id="advisors">
+            <ul>
+                <li id="advCities" class="advisor_bubble" title="ECONOMY">
+                    <a id="js_GlobalMenu_cities" onclick="ajaxHandlerCall(this.href);return false;"
+                       href="?view=tradeAdvisor&oldView=city"
+                       title="Informe sobre ciudades y finanzas"
+                       class="normalactive">
+                        <span class="smallFont">Ciudades</span>
+                    </a>
+                    <a id="js_GlobalMenu_citiesPremium"
+                       class="plus_button "
+                       onclick="ajaxHandlerCall(this.href);return false;" href=""
+                       title="Al informe general"></a>
+                </li>
+
+                <li id="advMilitary" class="advisor_bubble" title="MILITARY">
+                    <a id="js_GlobalMenu_military" onclick="ajaxHandlerCall(this.href);return false;"
+                       href="?view=militaryAdvisorCombatList&oldView=city"
+                       title="Informe militar"
+                       class="normalactive">
+                        <span class="smallFont">Milicia</span>
+                    </a>
+                    <a id="js_GlobalMenu_militaryPremium"
+                       class="plus_button "
+                       onclick="ajaxHandlerCall(this.href);return false;" href=""
+                       title="Al informe general"></a>
+                </li>
+
+                <li id="advResearch" class="advisor_bubble" title="SCIENCE">
+                    <a id="js_GlobalMenu_research" onclick="ajaxHandlerCall(this.href);return false;"
+                       href="?view=researchAdvisor&oldView=city"
+                       title="Informe sobre investigación"
+                       class="normalactive">
+                        <span class="smallFont">Investigación</span>
+                    </a>
+                    <a id="js_GlobalMenu_researchPremium"
+                       class="plus_button "
+                       onclick="ajaxHandlerCall(this.href);return false;" href=""
+                       title="Al informe general"></a>
+                </li>
+
+                <li id="advDiplomacy" class="advisor_bubble" title="DIPLOMACY">
+                    <a id="js_GlobalMenu_diplomacy" onclick="ajaxHandlerCall(this.href);return false;"
+                       href="?view=diplomacyAdvisor&oldView=city"
+                       title="Informe sobre diplomacia y mensajería"
+                       class="normalactive">
+                        <span class="smallFont">Diplomacia</span>
+                    </a>
+                    <a id="js_GlobalMenu_diplomacyPremium"
+                       class="plus_button "
+                       onclick="ajaxHandlerCall(this.href);return false;" href=""
+                       title="Al informe general"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+
+    <div id="avatarNotes" class="popup_window focusable" style="display: none;"></div>
+    <div id="chatWindow" class="popup_window focusable" style="display: none;"></div>
+    <div id="popupMessage" class="popup_window focusable"></div>
+    <div id="breadcrumbs" class="breadcrumbs">
+    <a id="js_worldBread" href="?view=worldmap_iso&islandX=53&islandY=53" class="yellow" title="Volver al mapa del mundo">
+        <img src="skin/layout/icon-world.png" alt="Mundo" class="vertical_middle" /> Mundo    </a>
+    <span class="white"> &gt; </span>
+    <a id="js_islandBread" class="yellow" href="?view=island&islandId=46" title="Volver a la isla">
+        <img src="skin/layout/icon-island.png" class="vertical_middle" />
+        <span id="js_islandBreadName" class="yellow">Ormieos</span>
+        <span id="js_islandBreadCoords"> [53:53]</span>
+    </a>
+    <span class="white"> &gt; </span>
+    <span class="white" id="js_cityBread">Polis</span>
+    
+    <div id="js_cityWarningBox" class="occupation_warning red_box"> 
+        <div id="js_cityOccupiedText" class="occupied_warning clearfix"></div> 
+        <div id="js_harbourOccupiedText" class="occupied_warning clearfix"></div> 
+        <div id="js_spiesInsideText" class="spy_warning clearfix"></div> 
+    </div>  
+</div>
+
+<div id="worldview" onselectstart="return false" style="">
+    <div id="scrollcover">
+
+        <div id="worldmap" class="phase1  isCapital" style="                        top: -97px;            left: -1809px;                    -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            -webkit-transform: scale(1);
+            transform: scale(1);">
+            <div id="locations" style="z-index: 200;">
+                                    <div id="position0" class="position0 building townHall level4">
+                        <div id="js_CityPosition0Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition0Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition0Countdown" style="cursor:pointer;" class="position0 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition0CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition0SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition0Scroll" style="cursor:pointer;" class=" position0 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition0ScrollName" class="green"  >
+                            Intendencia                            (<span id="js_CityPosition0Level">4</span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position1" class="position1 building port level1">
+                        <div id="js_CityPosition1Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition1Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                                                    <div id="js_CityPosition1PortCountdown" style="cursor:pointer;">
+                                <div class="before"></div>
+                                <div class="portLoadingIcon" id="js_CityPosition1PortCountdownText"></div>
+                                <div id="js_CityPosition1PortSpeedupButton"></div>
+                                <div class="after"></div>
+                            </div>
+                        
+                    </div>
+                    <div id="js_CityPosition1Countdown" style="cursor:pointer;" class="position1 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition1CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition1SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition1Scroll" style="cursor:pointer;" class=" position1 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition1ScrollName" class="green"  >
+                            Puerto comercial                            (<span id="js_CityPosition1Level">1</span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position2" class="position2 building buildingGround shore">
+                        <div id="js_CityPosition2Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition2Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                                                    <div id="js_CityPosition2PortCountdown" style="cursor:pointer;">
+                                <div class="before"></div>
+                                <div class="portLoadingIcon" id="js_CityPosition2PortCountdownText"></div>
+                                <div id="js_CityPosition2PortSpeedupButton"></div>
+                                <div class="after"></div>
+                            </div>
+                        
+                    </div>
+                    <div id="js_CityPosition2Countdown" style="cursor:pointer;" class="position2 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition2CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition2SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition2Scroll" style="cursor:pointer;" class="invisible position2 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition2ScrollName"  >
+                                                        (<span id="js_CityPosition2Level"></span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position3" class="position3 building buildingGround land">
+                        <div id="js_CityPosition3Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition3Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition3Countdown" style="cursor:pointer;" class="position3 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition3CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition3SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition3Scroll" style="cursor:pointer;" class="invisible position3 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition3ScrollName"  >
+                                                        (<span id="js_CityPosition3Level"></span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position4" class="position4 building barracks level2">
+                        <div id="js_CityPosition4Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition4Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition4Countdown" style="cursor:pointer;" class="position4 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition4CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition4SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition4Scroll" style="cursor:pointer;" class=" position4 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition4ScrollName" class="green"  >
+                            Cuartel                            (<span id="js_CityPosition4Level">2</span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position5" class="position5 building warehouse level3">
+                        <div id="js_CityPosition5Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition5Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition5Countdown" style="cursor:pointer;" class="position5 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition5CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition5SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition5Scroll" style="cursor:pointer;" class=" position5 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition5ScrollName" class="green"  >
+                            Depósito                            (<span id="js_CityPosition5Level">3</span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position6" class="position6 building buildingGround land">
+                        <div id="js_CityPosition6Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition6Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition6Countdown" style="cursor:pointer;" class="position6 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition6CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition6SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition6Scroll" style="cursor:pointer;" class="invisible position6 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition6ScrollName"  >
+                                                        (<span id="js_CityPosition6Level"></span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position7" class="position7 building carpentering level1">
+                        <div id="js_CityPosition7Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition7Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition7Countdown" style="cursor:pointer;" class="position7 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition7CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition7SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition7Scroll" style="cursor:pointer;" class=" position7 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition7ScrollName" class="green"  >
+                            Carpinteria                            (<span id="js_CityPosition7Level">1</span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position8" class="position8 building buildingGround land">
+                        <div id="js_CityPosition8Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition8Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition8Countdown" style="cursor:pointer;" class="position8 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition8CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition8SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition8Scroll" style="cursor:pointer;" class="invisible position8 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition8ScrollName"  >
+                                                        (<span id="js_CityPosition8Level"></span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position9" class="position9 building academy level6">
+                        <div id="js_CityPosition9Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition9Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition9Countdown" style="cursor:pointer;" class="position9 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition9CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition9SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition9Scroll" style="cursor:pointer;" class=" position9 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition9ScrollName"  class="levelup">
+                            Academia                            (<span id="js_CityPosition9Level">6</span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position10" class="position10 building buildingGround land">
+                        <div id="js_CityPosition10Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition10Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition10Countdown" style="cursor:pointer;" class="position10 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition10CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition10SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition10Scroll" style="cursor:pointer;" class="invisible position10 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition10ScrollName"  >
+                                                        (<span id="js_CityPosition10Level"></span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position11" class="position11 building palace level1">
+                        <div id="js_CityPosition11Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition11Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition11Countdown" style="cursor:pointer;" class="position11 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition11CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition11SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition11Scroll" style="cursor:pointer;" class=" position11 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition11ScrollName"  class="levelup">
+                            Palacio                            (<span id="js_CityPosition11Level">1</span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position12" class="position12 building buildingGround land">
+                        <div id="js_CityPosition12Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition12Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition12Countdown" style="cursor:pointer;" class="position12 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition12CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition12SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition12Scroll" style="cursor:pointer;" class="invisible position12 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition12ScrollName"  >
+                                                        (<span id="js_CityPosition12Level"></span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position13" class="position13 building buildingGround land">
+                        <div id="js_CityPosition13Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition13Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition13Countdown" style="cursor:pointer;" class="position13 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition13CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition13SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition13Scroll" style="cursor:pointer;" class="invisible position13 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition13ScrollName"  >
+                                                        (<span id="js_CityPosition13Level"></span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position14" class="position14 building wall level2">
+                        <div id="js_CityPosition14Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition14Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition14Countdown" style="cursor:pointer;" class="position14 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition14CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition14SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition14Scroll" style="cursor:pointer;" class=" position14 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition14ScrollName" class="green"  >
+                            Muralla de la ciudad                            (<span id="js_CityPosition14Level">2</span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position15" class="position15 building buildingGround land">
+                        <div id="js_CityPosition15Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition15Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition15Countdown" style="cursor:pointer;" class="position15 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition15CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition15SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition15Scroll" style="cursor:pointer;" class="invisible position15 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition15ScrollName"  >
+                                                        (<span id="js_CityPosition15Level"></span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position16" class="position16 building tavern level3">
+                        <div id="js_CityPosition16Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition16Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition16Countdown" style="cursor:pointer;" class="position16 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition16CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition16SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition16Scroll" style="cursor:pointer;" class=" position16 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition16ScrollName" class="green"  >
+                            Taberna                            (<span id="js_CityPosition16Level">3</span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position17" class="position17 building buildingGround sea">
+                        <div id="js_CityPosition17Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition17Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition17Countdown" style="cursor:pointer;" class="position17 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition17CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition17SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition17Scroll" style="cursor:pointer;" class="invisible position17 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition17ScrollName"  >
+                                                        (<span id="js_CityPosition17Level"></span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position18" class="position18 building buildingGround land">
+                        <div id="js_CityPosition18Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition18Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition18Countdown" style="cursor:pointer;" class="position18 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition18CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition18SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition18Scroll" style="cursor:pointer;" class="invisible position18 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition18ScrollName"  >
+                                                        (<span id="js_CityPosition18Level"></span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                    <div id="position19" class="position19 building buildingGround land">
+                        <div id="js_CityPosition19Img" class="buildingimg img_pos animated"></div>
+
+                                                <div class="hover img_pos invisible"></div>
+                        <a id="js_CityPosition19Link" class="hoverable" onclick="ajaxHandlerCall(this.href);return false;"  href="javascript:void(0);"></a>
+                        
+
+
+
+                        
+                    </div>
+                    <div id="js_CityPosition19Countdown" style="cursor:pointer;" class="position19 cityScroll">
+                        <div class="before"></div>
+                        <div class="buildingUpgradeIcon" id="js_CityPosition19CountdownText">
+                                                    </div>
+                        <div id="js_CityPosition19SpeedupButton" title="Reducir tiempo de construcción"></div>
+                        <div class="after"></div>
+                    </div>
+
+                    <div id="js_CityPosition19Scroll" style="cursor:pointer;" class="invisible position19 cityScroll timetofinish">
+                        <div class="before"></div>
+                        <div id="js_CityPosition19ScrollName"  >
+                                                        (<span id="js_CityPosition19Level"></span>)
+                        </div>
+                        <div class="after"></div>
+                    </div>
+
+                                                <div id="city_background_nw" class="city_background"></div>
+                <div id="city_background_ne" class="city_background"></div>
+                <div id="city_background_sw" class="city_background"></div>
+                <div id="city_background_se" class="city_background"></div>
+                <div id="js_city_feature_garrisonGate" class="city_feature invisible" title="La ciudad es el centro de una lucha">
+                </div>
+                <div id="js_cityFight1" title="La ciudad es el centro de una lucha"></div>
+                <div id="js_cityFight2" title="La ciudad es el centro de una lucha"></div>
+                <div id="js_cityFight3" title="La ciudad es el centro de una lucha"></div>
+                <div id="js_city_feature_garrison"
+                     class="city_feature invisible"
+                     title="Tu ciudad está siendo ocupada."
+                     onclick="ajaxHandlerCall('?view=cityMilitary&activeTab=tabUnits');return false;"></div>
+
+
+                <div id="js_city_feature_protester" class="city_feature invisible" title="¡Los ciudadanos están enojados!"></div>
+                <div id="js_city_feature_beachboys" class="city_feature beachboys invisible">
+                    <div class="animation animated_happy_citizen_1"></div>
+                    <div class="animation animated_happy_citizen_2"></div>
+                    <div class="animation animated_happy_citizen_3"></div>
+                </div>
+
+
+                                <div id="plaguePos1" class="plagueAnimal ratSW"></div>
+                <div id="plaguePos2" class="plagueAnimal ratNO"></div>
+                <div id="plaguePos3" class="plagueAnimal ratN"></div>
+                <div id="plaguePos4" class="plagueAnimal ratW"></div>
+                <div id="plaguePos5" class="plagueAnimal ratSW"></div>
+                <div id="plaguePos6" class="plagueAnimal toadO"></div>
+                <div id="plaguePos7" class="plagueAnimal toadSO"></div>
+                <div id="plaguePos8" class="plagueAnimal toadNW"></div>
+                <div id="plaguePos9" class="plagueAnimal toadSO"></div>
+                <div id="plaguePos10" class="plagueAnimal toadSW"></div>
+                <div id="plaguePos11" class="plagueAnimal locustSW"></div>
+                <div id="plaguePos12" class="plagueAnimal locustS"></div>
+                <div id="plaguePos13" class="plagueAnimal locustW"></div>
+                <div id="plaguePos14" class="plagueAnimal locustSW"></div>
+                <div id="plaguePos15" class="plagueAnimal locustNO"></div>
+
+                <div id="seaMonster" class="seaMonster"></div>
+
+                                <div id="dolphinPos1" class="animation dolphin"></div>
+                <div id="dolphinPos2" class="animation dolphin"></div>
+                <div id="dolphinPos3" class="animation dolphin"></div>
+                <div id="dolphinPos4" class="animation dolphin"></div>
+
+                                <div class="animation animatedWell"></div>
+                <div class="animation animatedRiverPart1"></div>
+                <div class="animation animatedRiverPart2"></div>
+                <div class="animation animatedRiverPart3"></div>
+                <div class="animation animatedSea1"></div>
+                <div class="animation animatedSea2"></div>
+                                <div id="portOccupierShip1" class="invisible" onclick="ajaxHandlerCall('?view=cityMilitary&activeTab=tabShips');return false;"></div>
+                <div id="portOccupierShip2" class="invisible" onclick="ajaxHandlerCall('?view=cityMilitary&activeTab=tabShips');return false;"></div>
+
+                <div id="pirateFortressBackground"></div>
+                <div id="pirateFortressShip" class="invisible"></div>
+                <div id="walkers"></div>
+                <a id="cityRegistrationGifts" class="invisible" onclick="ajaxHandlerCall('?view=registrationGifts');return false;"></a>
+                <a id="cityDailyTasks" class="level1 " onclick="ajaxHandlerCall('?view=dailyTasks');return false;">
+                    <div id="cityDailyTasksArrow" class="invisible"></div>
+                    <div id="cityDailyTasksAnimation" class="invisible"></div>
+                </a>
+
+                <div id="cityAmbrosiaFountain" class="fountain_inactive">
+                    <div class="buildingimg img_pos"></div>
+                    <div class="animation"></div>
+                    <div class="hover img_pos invisible"></div>
+                    <div id="cityAmbrosiaFountainLink" class="hoverable" onclick="ajaxHandlerCall('?view=ambrosiaFountain');return false;"></div>
+                </div>
+                <div id="cityFlyingShopContainer">
+                    <div class="hover img_pos invisible"></div>
+                    <a id="cityFlyingShop" class="hoverable">
+                        <div class="tooltip"></div>
+                        <div class="extras flags"></div>
+                        <div class="extras sparkle1"></div>
+                    </a>
+                </div>
+
+
+                <div id="cityCinema" class="invisible">
+                    <div class="hover img_pos invisible"></div>
+                    <a id="cityCinemaLink" class="hoverable" href="javascript:void();" onclick="ajaxHandlerCall(this.href);return false;">
+                        <div class="tooltip">Teatro de Proyección</div>
+                        <div class="animationFire"></div>
+                        <div class="animationLight"></div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="city_water_bottom" style="z-index: 100;"></div>
+        </div>
+    </div>
+</div>
+
+
+<div id="eventDiv">
+    </div>
+
+<div id="emailValidationReminderButton"
+     style="display: none"
+         ></div>
+        <div id="leftMenu">
+            <div id="js_viewCityMenu" class="slot_menu city_menu">
+                <ul class="menu_slots">
+                    <li class="expandable slot0 military"
+                                                onclick="ajaxHandlerCall('?view=cityMilitary&activeTab=tabUnits&cityId=3188'); return false;">
+                        <div class="image image_troops"></div>
+                        <div class="name"><span class="namebox">Tropas en la ciudad</span></div>
+                    </li>
+                    <li class="expandable slot0 espionage"
+                        style="display: none;"                        onclick="ajaxHandlerCall('?view=spyMissions&targetCityId=3188'); return false;">
+                        <div class="image image_espionage"></div>
+                        <div class="name"><span
+                                class="namebox">Espionaje</span></div>
+                    </li>
+                    <li class="expandable resourceShop"
+                                                onclick="ajaxHandlerCall('?view=premiumResourceShop&cityId=3188'); return false;">
+                        <div class="image image_resourceShop"></div>
+                        <div class="name"><span class="namebox">¡Consigue recursos!</span>
+                        </div>
+                    </li>
+                    <li class="expandable slot1"
+                                                onclick="ajaxHandlerCall('?view=premiumTrader'); return false;">
+                        <div class="image image_trader"></div>
+                        <div class="name"><span
+                                class="namebox">Premium - Mercader</span></div>
+                    </li>
+                    <li class="expandable slot2"
+                                                onclick="ajaxHandlerCall('?view=friendListEdit'); return false;">
+                        <div class="image image_friends"></div>
+                        <div class="name"><span class="namebox">Invitar amigos</span>
+                        </div>
+                    </li>
+                    <li class="expandable slot3"
+                        style="display: none;"                        onclick="ajaxHandlerCall('?action=header&function=setNavigation&screen=constructionList&cityId=3188&state=' + Math.abs(ikariam.getScreen().constructionListState-1)); return false;">
+                        <div class="image image_constructionlist"></div>
+                        <div class="name"><span
+                                class="namebox">Lista de construcción de edificios</span></div>
+                    </li>
+                    <li class="expandable slot4"
+                        style="display: none;"                        onclick="ajaxHandlerCall('?view=garrisonEdit&cityId=3188'); return false;">
+                        <div class="image image_fireunit"></div>
+                        <div class="name"><span class="namebox">Dar de baja tropas</span></div>
+                    </li>
+
+                    <li class="expandable slot5"
+                        onclick="ajaxHandlerCall('?view=noViewChange&action=Options&function=toggleCityBuildingNameOption'); return false;">
+                        <div class="image image_toggle"></div>
+                        <div class="name"><span class="namebox" id="toggleBuildingInfos">Ocultar nombres de edificios</span></div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        
+    <div id="rightMenu">
+        <div id="js_viewFriends" class="slot_menu friends_menu">
+            <ul class="friends">
+                                        <li id="js_friendlistSlot1" class="slot">
+                            <div class="slotnum">1</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                                <li id="js_friendlistSlot2" class="slot">
+                            <div class="slotnum">2</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                                <li id="js_friendlistSlot3" class="slot">
+                            <div class="slotnum">3</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                                <li id="js_friendlistSlot4" class="slot">
+                            <div class="slotnum">4</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                                <li id="js_friendlistSlot5" class="slot">
+                            <div class="slotnum">5</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                                <li id="js_friendlistSlot6" class="slot">
+                            <div class="slotnum">6</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                                <li id="js_friendlistSlot7" class="slot">
+                            <div class="slotnum">7</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                                <li id="js_friendlistSlot8" class="slot">
+                            <div class="slotnum">8</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                                <li id="js_friendlistSlot9" class="slot">
+                            <div class="slotnum">9</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                                <li id="js_friendlistSlot10" class="slot">
+                            <div class="slotnum">10</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                                <li id="js_friendlistSlot11" class="slot">
+                            <div class="slotnum">11</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                                <li id="js_friendlistSlot12" class="slot">
+                            <div class="slotnum">12</div>
+                            <a onclick="ajaxHandlerCall(this.href);return false;"
+                               title="Invitar a amigos" href="?view=friendListEdit"
+                               class="image noViewParameters"></a>
+                        </li>
+                                    </ul>
+            <a id="toggleEdit" class="edit noViewParameters" href="?view=friendListEdit2"
+               onclick="ajaxHandlerCall(this.href);return false;"></a>
+            <div id="toggleShowFriends" class="showfriends"></div>
+            <a title="Más amigos" href="#up" class="pageup"
+               data-title="Más amigos"><span
+                    class="accesshint">Más amigos</span></a>
+            <a title="Más amigos" href="#down" class="pagedown"><span
+                    class="accesshint">Más amigos</span></a>
+        </div>
+    </div>
+
+<div id="footer" class="clearfix">
+    <div class="footerbg">
+        <div id="mapControls" style="top:-90px;">
+    <ul class="scrolling">
+        <li class="nw"><a href="#" onmousedown="mapIsClicked=true;ikariam.getMapNavigation().moveMap(-1,-1);"
+                          onmouseout="mapIsClicked=false;" onmouseup="mapIsClicked=false;"></a></li>
+        <li class="n"><a href="#" onmousedown="mapIsClicked=true;ikariam.getMapNavigation().moveMap(0,-1);"
+                         onmouseout="mapIsClicked=false;" onmouseup="mapIsClicked=false;"></a></li>
+        <li class="ne"><a href="#"
+                          onmousedown="mapIsClicked=true;ikariam.getMapNavigation().moveMap(1,-1); return false;"
+                          onmouseout="mapIsClicked=false;" onmouseup="mapIsClicked=false;"></a></li>
+        <li class="w"><a href="#"
+                         onmousedown="mapIsClicked=true;ikariam.getMapNavigation().moveMap(-1,0); return false;"
+                         onmouseout="mapIsClicked=false;" onmouseup="mapIsClicked=false;"></a></li>
+        <li class="e"><a href="#" onmousedown="mapIsClicked=true;ikariam.getMapNavigation().moveMap(1,0); return false;"
+                         onmouseout="mapIsClicked=false;" onmouseup="mapIsClicked=false;"></a></li>
+        <li class="sw"><a href="#"
+                          onmousedown="mapIsClicked=true;ikariam.getMapNavigation().moveMap(-1,1); return false;"
+                          onmouseout="mapIsClicked=false;" onmouseup="mapIsClicked=false;"></a></li>
+        <li class="s"><a href="#" onmousedown="mapIsClicked=true;ikariam.getMapNavigation().moveMap(0,1); return false;"
+                         onmouseout="mapIsClicked=false;" onmouseup="mapIsClicked=false;"></a></li>
+        <li class="se"><a href="#"
+                          onmousedown="mapIsClicked=true;ikariam.getMapNavigation().moveMap(1,1); return false;"
+                          onmouseout="mapIsClicked=false;" onmouseup="mapIsClicked=false;"></a></li>
+        <li class="toggle"><a href="javascript:void(0);" onclick="return false;"
+                              onmouseup="ikariam.getMapNavigation().toggleControls(); return false;"></a></li>
+    </ul>
+</div>
+
+
+        <div id="js_toggleControlsOn" class="hideControls"></div>
+        <div
+            class="footerleft"> <span class="copyright">© 2008 by <a id="gflink" target="_blank" href="https://ar.gameforge.com">Gameforge 4D GmbH</a><a onclick="ajaxHandlerCall(this.href);return false;" href="/index.php?view=credits" style="margin:0px;">.</a> All rights reserved.</span> </div>
+                <div class="footerright">
+            <div class="footerrightLinkContainer">
+                <ul class="footerlinks">
+                    <li><a target="_blank" href="https://ar.ikariam.gameforge.com/rules.php"
+                           title="Reglas">Reglas</a></li>
+                    <li><a href="https://agbserver.gameforge.com/esAR-Terms-Ikariam.html" target="_blank"
+                           title="T&C">T&C</a>
+                    </li>
+                    <li><a href="https://agbserver.gameforge.com/esAR-Imprint-Ikariam.html" target="_blank"
+                           title="Contacto">Contacto</a>
+                    </li>
+                    <li><a href="https://agbserver.gameforge.com/esAR-Privacy-Ikariam.html" target="_blank"
+                           title="Política Privada">Política Privada</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="loadingPreview"></div>
+</div> 
+    <script type="text/javascript">
+        console = {
+            log: function () {
+            },
+            dir: function () {
+            }
+        };
+    </script>
+    
+            <script type="text/javascript" src="//gf2.geo.gfsrv.net/cdn4a/60212c7a0b13172a5c87604541eb11.js"></script>
+    <script type="text/javascript" src="//gf2.geo.gfsrv.net/cdndf/63ae9571fa52868ae6b03e4fa04fe5.js"></script>
+    <script type="text/javascript" src="//gf1.geo.gfsrv.net/cdn6a/3c9d48bbe40ab021977ee5d05e3460.js"></script>
+
+
+<div id="neoDauPixelContainer"></div>
+<script type="text/javascript">
+    /**
+     * CREATE GLOBAL DATASET FROM PHP (used on all screens)
+     */
+    w = window;
+    d = w.document;
+    jQuery.uuid = 1;
+
+    /* some localization constants, used in various contexts... */
+        LocalizationStrings = JSON.parse('{"ambrosia":"Ambros\u00eda","gold":"Oro","tradegood":"Bien econ\u00f3mico","wood":"Madera","wine":"Vino","marble":"M\u00e1rmol","crystal":"Cristal","sulfur":"Azufre","wood_deposit":"Bosque","wine_deposit":"Vid","marble_deposit":"Cantera","crystal_deposit":"Mina de cristal","sulfur_deposit":"Mina de azufre","wonder_name":"Maravilla","send_message":"Enviar mensaje","citizens":"Ciudadanos","branchOffice":"Tienda","upkeep":"Costos por hora. Se puede reducir con formas de gobierno e investigaci\u00f3n.","building_time":"Tiempo de construcci\u00f3n","colonize_here":"\u00bfQuer\u00e9s colonizar ac\u00e1?","avatar_banned":"\u00a1Esta cuenta se encuentra actualmente suspendida!","avatar_vacation":"El jugador est\u00e1 de vacaciones en este momento","avatar_inactive":"El jugador est\u00e1 actualmente inactivo","avatar_inactive_suffix":"(i)","level":"Nivel","free_building_space":"Terreno libre","building_under_construction":"En construcci\u00f3n","yes":"Si","abort":"Cancelar","price":"Precio","timeunits":{"short":{"year":"A","month":"M","day":"D","hour":"hs","minute":"m","second":"s"}},"language":"ar","decimalPoint":".","thousandSeperator":",","warnings":{"tolargeText":"\u00a1Atenci\u00f3n! \u00a1Tu texto es muy largo!"},"not_enought_resources":"\u00a1No tienes suficientes recursos!","friends":{"edit_title":"Invitar a amigos","send_msg":"Escribir mensaje","kick_msg":"Finalizar amistad","online":"est\u00e1 en l\u00ednea","offline":"est\u00e1 desconectado","inactive":"est\u00e1 inactivo"},"buildingNames":{"show":"Mostrar nombres de edificios","hide":"Ocultar nombres de edificios"},"inventoryEmptyDetailsName":"\u00a1Haz clic sobre un objeto o efecto!","inventoryEmptyDetailsDesc":"Los objetos se pueden conseguir en el juego o adquirir en la tienda.","errorUsernameLength":"El nombre de usuario debe contener entre 3 y 15 caracteres."}');
+
+    /* is player in ally? */
+    hasAlly = false;
+
+    /* maximum chars for avatar notes */
+    avatarNotesMaxChars = 200;
+
+    /* the view on reload: city, island or worldmap. will get body-id */
+    backgroundView = 'city';
+
+    /* Data for Popup if needed */
+    popupData = JSON.parse('null');
+
+    /* initialize tutorial if required */
+    tutorialData = null;
+
+    
+    var feedbackMsg = null;
+    
+    /* the shortcuts to islands with own cities and related cities for map navigation */
+    islandShortcuts = new Array();
+        var ingameCounterCnt = 0;
+    var ingameCounterConfig = {};
+    var ingameCounterLinkedConfig = {};
+    
+                ingameCounterCnt = ingameCounterCnt + 1;
+                ingameCounterConfig['112716' + ingameCounterCnt] = {
+                   timeLeft: 112716,
+                   popupTitle: 'Promoción',
+                   popupContent: '    <center>        <a href="/index.php?view=premium&category=discount" target="">            <img height="106" src="//gf2.geo.gfsrv.net/cdn70/2eed0cc0e85c2e25a8bbf8a64be5ba.jpg" alt="" class="promoImage"/>        </a>    </center><p>Hola, juse, ¡tienes la oportunidad de ahorrar!<br />Desde el 30.04.2020 00:00:00 hasta el 01.05.2020 23:59:59 puedes conseguir a un precio muy económico:</p><div class="popupItemList">    <center>                    <div class="itemIcon resourcePackage goodsPackage amount250000 large">            <div class="tooltip">Entrega de materia prima: madera (gigante)</div>        </div>                <div class="itemIcon marblePackage goodsPackage amount250000 large">            <div class="tooltip">Entrega de materia prima: mármol (gigante)</div>        </div>                <div class="itemIcon winePackage goodsPackage amount250000 large">            <div class="tooltip">Entrega de materia prima: vino (gigante)</div>        </div>                <div class="itemIcon crystalPackage goodsPackage amount250000 large">            <div class="tooltip">Entrega de materia prima: cristal (gigante)</div>        </div>                <div class="itemIcon sulfurPackage goodsPackage amount250000 large">            <div class="tooltip">Entrega de materia prima: azufre (gigante)</div>        </div>                <div class="itemIcon goldPackage goodsPackage amount250000 large">            <div class="tooltip">Entrega de materia prima: Oro (gigante)</div>        </div>    </center></div>',
+                   popupButton: ['/index.php?view=premium&category=discount', 'A la tienda'],
+                   popupCloseButtonText: 'Cerrar',
+                   timeout: 1588370399,
+                   currentTime: 1588257683,
+                   scrollText: 'Promoción',
+                   scrollCssClass: '',
+                   scrollType: 'happyHour',
+                   counterType: 'popup'
+                };
+                    /**
+     * CREATE DATASET FOR CITY
+     */
+
+    /* preparation for including city events (winter, halloween, easter...) - not implemented in v0-5-0 yet. */
+        localSpecialEvent = '';
+
+    /* the building construction list. contains 0 or 1 building for non-premium users, premium users can have more buildings in queue. */
+    constructionListEndDate = null, constructionListStartDate = null;
+
+    
+    var underConstruction = -1;
+    var endUpgradeTime = -1;
+    var startUpgradeTime = -1;
+    
+    var bgViewData = {
+        currentCityId: 3188,
+        underConstruction: underConstruction,
+        endUpgradeTime: endUpgradeTime,
+        startUpgradeTime: startUpgradeTime,
+        constructionListStart: constructionListStartDate,
+        constructionListEnd: constructionListEndDate,
+        constructionListState: 0,
+        cityLeftMenu: {"visibility":{"military":1,"espionage":0,"resourceShop":1,"slot1":1,"slot2":1,"slot3":0,"slot4":0},"ownCity":1} };
+
+    
+    dataSetForView = {
+        /* the game's name */
+        gameName: "Ikariam",
+        /* the name of the server */
+        serverName: 'Omega',
+        /* the avatar id */
+        avatarId: '1572',
+        /* the avatar's ally id */
+        avatarAllyId: '0',
+        /* the server time on reload */
+        serverTime: "1588257683",
+        realHour: 3600,
+        dateTimeFormat: "d.m.Y G:i:s",
+        serverTimezoneOffset: 7200,
+        /* the background view id (city, island or worldmap) */
+        backgroundView: backgroundView,
+        /* is the current city the player's own city? */
+        isOwnCity: true,
+        /* the luxury tradegood produced on current island */
+        producedTradegood: "3",
+        /* the player's current resource values in city */
+        currentResources: JSON.parse('{\"citizens\":56,\"population\":250,\"resource\":14857,\"2\":918,\"1\":457,\"4\":257,\"3\":81}'),
+        /* the maximum of resources that can be stored in city */
+        maxResources: JSON.parse('{\"resource\":26500,\"0\":26500,\"1\":26500,\"2\":26500,\"3\":26500,\"4\":26500}'),
+        /* the resources offered for sell in branch office */
+        branchOfficeResources: JSON.parse('{\"resource\":0,\"1\":0,\"2\":0,\"3\":0,\"4\":0}'),
+        /* the wood production amount in current city */
+        resourceProduction: 0.057638888888889,
+        /* the luxury tradegood production amount in current city  */
+        tradegoodProduction: 0,
+        /* wine spendings in city per hour */
+        wineSpendings: 0,
+        wineTickInterval: 3600,
+        upkeep: -0,
+        income: 276,
+        badTaxAccountant: 0,
+        scientistsUpkeep: -168,
+        /* the language direction ("rtl" or "ltr") */
+        languageDirection: "ltr",
+        /* does the player have an ally? */
+        hasAlly: hasAlly,
+        /* the saved state of the map navigation control elements */
+        mapNavigationExpanded: true,
+        /* polling frequency for the chat window */
+        chatPollFrequency: 5000,
+        /* maximum chat lines requested from server */
+        chatLineMaxlength: 200,
+        /* maximum length of avatar notes */
+        notesLineMaxlength: 200,
+        sessionDeprecated: 'Tu sesión venció, por favor logueate de nuevo en la página de inicio!',
+        /* the background data object, contains different data for city, island and worldmap. to be passed to the screen object in ikariam.BackgroundView */
+        bgViewData: bgViewData,
+        /* the island shortcuts for map navigation*/
+        shortcuts: islandShortcuts,
+        /* the last action request, used as one click token */
+        actionRequest: "34408f08214bde3ad0bac01cbcacc1ac",
+        /* some infos for displaying the title tag */
+        nextETA: 0,
+        breadcrumbsWorldlinkText: 'Mundo',
+
+        animationsActive: "1",
+        buildingNamesActive: "1",
+        /* add a feedback message directly after reload (advisor) */
+        feedbackMsg: feedbackMsg,
+        /* if the tutorial is displayed, provide an additional data array... */
+        tutorialData: tutorialData,
+        /* data for ingame countdown and popup, if active */
+        ingameCounterConfig: ingameCounterConfig,
+        /* die normalen view parameter, potentiell eines templateViews */
+        viewParams: JSON.parse('{\"view\":\"city\"}'),
+        /* premium account active? */
+        hasPremiumAccount: '',
+        /* reset sliders on create view? (default: false [slider positions are stored], after actions: clear!) */
+        resetSliders: 0,
+        /* all relevant data to each related city (own, occupied, allied): the id, name, coords and produced tradegood. needed to update the global city dropdown menu. */
+        relatedCityData: JSON.parse('{\"city_3188\":{\"id\":3188,\"name\":\"Polis\",\"coords\":\"[53:53] \",\"tradegood\":\"3\",\"relationship\":\"ownCity\"},\"city_3370\":{\"id\":3370,\"name\":\"Polis\",\"coords\":\"[60:53] \",\"tradegood\":\"2\",\"relationship\":\"ownCity\"},\"additionalInfo\":\"cityCoords\",\"selectedCity\":\"city_3188\"}'),
+        /* all relevant data to display the 4 advisors (highlights, alerts, links, premium ad) */
+        advisorData: JSON.parse('{\"military\":{\"link\":\"?view=militaryAdvisorCombatList&oldView=city\",\"cssclass\":\"normalactive\",\"premiumlink\":\"?view=premiumDetails&oldView=city\"},\"cities\":{\"cssclass\":\"normalactive\",\"link\":\"?view=tradeAdvisor&oldView=city\",\"premiumlink\":\"?view=premiumDetails&oldView=city\"},\"research\":{\"cssclass\":\"normalactive\",\"link\":\"?view=researchAdvisor&oldView=city\",\"premiumlink\":\"?view=premiumDetails&oldView=city\"},\"diplomacy\":{\"cssclass\":\"normalactive\",\"link\":\"?view=diplomacyAdvisor&oldView=city\",\"premiumlink\":\"?view=premiumDetails&oldView=city\"},\"hasPremiumAccount\":false}'),
+
+        isIPhone: 0,
+
+        touchVersion: 0,
+
+        loginMode: 0,
+
+        lightVersion: 0,
+
+        mapNativeScrolling: 0,
+
+        mainbox_x: 0,
+
+        mainbox_y: 0,
+
+        mainbox_z: 0,
+
+        sidebar_x: 0,
+
+        sidebar_y: 0,
+
+        sidebar_z: 0,
+
+
+        cityParametersAlreadySet: 1,
+
+        islandParametersAlreadySet: 1,
+
+        worldview_scale_city: 1,
+
+        worldview_scale_island: 1,
+
+        netbarActive: 0,
+        worldview_scroll_left_city: 230,
+        worldview_scroll_top_city: 120,
+        worldview_scroll_left_island: 265,
+        worldview_scroll_top_island: 190,
+        specialEvent: 0
+
+    };
+
+    /**
+     * INSTANTIATE FRONTEND
+     * AND HANDLE WINDOW EVENTS ON PAGE
+     */
+    $(document).ready(init);
+
+    /**
+     * instantiate js-frontend (see ikariam.js)
+     *
+     * pass the php dataset to namespace ikariam.
+     * on initialization, the main data model ikariam.Model, the background view ikariam.BackgroundView (holding city, island or worldmap screen)
+     * and a controller ikariam.Controller for event handling and responding ajax requests is created.
+     *
+     */
+    function init() {
+
+        ikariam.init(dataSetForView);
+        // shortcuts for some help functions, called in various templates.
+        var model = ikariam.getModel();
+        shortenValue = model.shortenValue;
+        locaNumberFormat = model.locaNumberFormat;
+        numberFormat = model.numberFormat;
+
+
+        
+        // city background: load construction list sidebar as template view, if activated
+        if (ikariam.backgroundView.id === "city" && ikariam.getScreen().constructionListState > 0) {
+                    }
+        // island background: preselect city
+                else if (ikariam.backgroundView.id === "island") {
+            ikariam.getScreen().preselectCity();
+        }
+        
+        // load daily activity popup
+                ikariam.MultiPopupController.addTab("Recauda tu bonificación diaria.", '<div id="dailyActivityBonus">    <div class="popup_contentbox">        <div class="buildingDescription">            <h1> Recauda tu bonificación diaria. </h1>        </div>        <div class="dailyActivityGraph">            <img                src="skin/dailyActivity/day2.jpg"                style="float:none;"/>            <div class="bonusLevel bold">Nivel de bonificación 2/7 </div>                            <div class="bonusGold1 days day1">200</div>                <div class="bonusWine days day1">100</div>                                <div class="dayDescription days day1">Día 1</div>                            <div class="bonusGold2 days day2 bold green">300</div>                <div class="bonusWine days day2 bold green">150</div>                                <div class="dayDescription days day2 bold green">Día 2</div>                            <div class="bonusGold3 days day3">400</div>                <div class="bonusWine days day3">200</div>                                <div class="dayDescription days day3">Día 3</div>                            <div class="bonusGold4 days day4">500</div>                <div class="bonusWine days day4">250</div>                                <div class="dayDescription days day4">Día 4</div>                            <div class="bonusGold5 days day5">600</div>                <div class="bonusWine days day5">300</div>                                <div class="dayDescription days day5">Día 5</div>                            <div class="bonusGold6 days day6">700</div>                <div class="bonusWine days day6">350</div>                                <div class="dayDescription days day6">Día 6</div>                            <div class="bonusGold7 days day7">1000</div>                <div class="bonusWine days day7">400</div>                                    <div                        class="bonusTransporter days day7">2</div>                                    <div class="dayDescription days day7">Día 7</div>                    </div>                <div class="highlightbox hint">            Juega varios días seguidos para recibir bonificaciones aún mejores. Los barcos comerciales están a tu disposición durante 7 días.        </div>                    <div class="highlightbox cityImage hint">                Construye más ciudades para recibir mayores bonificaciones. Todas las bonificaciones básicas son multiplicadas por el número de ciudades que tengas.            </div>                <form id="dailybonus" onsubmit="ajaxHandlerCallFromForm(this);return false;" method="POST">            <input type="hidden" name="action" value="AvatarAction"/>            <input type="hidden" name="function" value="giveDailyActivityBonus"/>            <div class="bottomRow clearfix">                <div class="left">Traspasar bonificación a la siguiente ciudad:</div>                <div id="js_dailyActivityBonusCitySelectContainer" class="select_container left shorten_text">                    <select name="dailyActivityBonusCitySelect" class="dropdown citySelect"                            id="dailyActivityBonusCitySelect" style="width: 175px;height:26px">                                                    <option selected="selected" value="3188">Polis</option>                                                    <option  value="3370">Polis</option>                                            </select>                </div>            </div>        </form>    </div></div> ', "ajaxHandlerCallFromForm($('#dailybonus')[0]); $('body').trigger('click.dropDown');", 100);
+        
+        // load special promotion popup
+        
+        ikariam.MultiPopupController.closeButtonText = 'Cerrar';
+        ikariam.MultiPopupController.showPopup();
+
+
+            }
+
+    init.periodicalDataRefresh = setInterval("ajaxHandlerCall('?view=updateGlobalData')", 60000);
+
+    /**
+     * on unload, store cookie data for avatar notes and chat window.
+     */
+    w.onunload = function () {
+        $("#loadingPreview").css("display", "block");
+        if (ikariam.getPopupController() !== null) ikariam.getPopupController().saveCookies();
+    };
+    $("#loadingPreview").css("display", "none");
+
+
+    </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                ikariam.getClass(ajax.Responder, [["updateBackgroundData",{"name":"Polis","id":"3188","phase":1,"isCapital":true,"ownerId":"1572","ownerName":"juse","islandId":"46","islandName":"Ormieos","islandXCoord":"53","islandYCoord":"53","buildingSpeedupActive":1,"showPirateFortressBackground":1,"showPirateFortressShip":0,"lockedPosition":{"13":"\u00a1Para construir aqu\u00ed ten\u00e9s que investigar \"Burocracia\"!"},"occupierId":"1025","occupierName":"MALDITO","cityOccupied":"Polis est\u00e1 siendo ocupada por MALDITO","underConstruction":-1,"endUpgradeTime":-1,"startUpgradeTime":-1,"position":[{"name":"Intendencia","level":"4","isBusy":false,"canUpgrade":true,"isMaxLevel":false,"building":"townHall"},{"name":"Puerto comercial","level":"1","isBusy":false,"canUpgrade":true,"isMaxLevel":false,"building":"port"},{"building":"buildingGround shore"},{"building":"buildingGround land"},{"name":"Cuartel","level":"2","isBusy":false,"canUpgrade":true,"isMaxLevel":false,"building":"barracks"},{"name":"Dep\u00f3sito","level":"3","isBusy":false,"canUpgrade":true,"isMaxLevel":false,"building":"warehouse"},{"building":"buildingGround land"},{"name":"Carpinteria","level":"1","isBusy":false,"canUpgrade":true,"isMaxLevel":false,"building":"carpentering"},{"building":"buildingGround land"},{"name":"Academia","level":"6","isBusy":false,"canUpgrade":false,"isMaxLevel":false,"building":"academy"},{"building":"buildingGround land"},{"name":"Palacio","level":"1","isBusy":false,"canUpgrade":false,"isMaxLevel":false,"building":"palace"},{"building":"buildingGround land"},{"building":"buildingGround land"},{"name":"Muralla de la ciudad","level":"2","isBusy":false,"canUpgrade":true,"isMaxLevel":false,"building":"wall"},{"building":"buildingGround land"},{"name":"Taberna","level":"3","isBusy":false,"canUpgrade":true,"isMaxLevel":false,"building":"tavern"},{"building":"buildingGround sea"},{"building":"buildingGround land"},{"building":"buildingGround land"}],"beachboys":"visible","spiesInside":null,"cityLeftMenu":{"visibility":{"military":1,"espionage":0,"resourceShop":1,"slot1":1,"slot2":1,"slot3":0,"slot4":0},"ownCity":1},"ambrosiaFountain":"fountain_inactive","walkers":{"add":[["walkerAmbience9","walkers",[[450,539,"none","310",1588257675,"soldierForeign"],[450,539,"SO","310",1588257675,"soldierForeign"],[486,558,"SO","310",1588257678,"soldierForeign"],[530,543,"O","310",1588257681,"soldierForeign"],[553.6,561,"O","310",1588257683,"soldierForeign"],[589,588,"SO","310",1588257686,"soldierForeign"],[627,616,"SO","310",1588257689,"soldierForeign"],[700,580,"NO","310",1588257694,"soldierForeign"],[757,553,"NO","310",1588257699,"soldierForeign"],[819,520,"NO","299",1588257703,"soldierForeign"],[857,503,"NO","299",1588257706,"soldierForeign"],[967,440,"NO","310",1588257714,"soldierForeign"],[1117,512,"SO","299",1588257726,"soldierForeign"],[1142,529,"SO","310",1588257728,"soldierForeign"],[1018,590,"SW","310",1588257737,"soldierForeign"],[972,559,"NW","310",1588257741,"soldierForeign"],[1018,590,"SO","310",1588257744,"soldierForeign"],[1142,529,"NO","310",1588257753,"soldierForeign"],[1117,512,"NW","310",1588257755,"soldierForeign"],[967,440,"NW","299",1588257767,"soldierForeign"],[857,503,"SW","310",1588257775,"soldierForeign"],[819,520,"SW","299",1588257778,"soldierForeign"],[757,553,"SW","299",1588257782,"soldierForeign"],[700,580,"SW","310",1588257787,"soldierForeign"],[627,616,"SW","310",1588257792,"soldierForeign"],[589,588,"NW","310",1588257795,"soldierForeign"],[530,543,"NW","310",1588257800,"soldierForeign"],[486,558,"W","310",1588257803,"soldierForeign"],[450,539,"NW","310",1588257806,"soldierForeign"]],1588257683,"Tengo que volver a visitar a mi familia pronto.",1588257806,0],["walkerAmbience10","walkers",[[1168,377,"none","310",1588257679,"soldierForeign"],[1168,377,"NW","310",1588257679,"soldierForeign"],[1122,349,"NW","310",1588257683,"soldierForeign"],[1122,349,"NW","310",1588257683,"soldierForeign"],[1094,350,"W","299",1588257684,"soldierForeign"],[1059,333,"NW","303",1588257687,"soldierForeign"],[967,380,"SW","303",1588257694,"soldierForeign"],[927,404,"SW","299",1588257697,"soldierForeign"],[967,440,"SO","299",1588257701,"soldierForeign"],[857,503,"SW","310",1588257709,"soldierForeign"],[819,520,"SW","299",1588257712,"soldierForeign"],[757,553,"SW","299",1588257717,"soldierForeign"],[700,580,"SW","310",1588257721,"soldierForeign"],[627,616,"SW","310",1588257726,"soldierForeign"],[628,676,"S","310",1588257730,"soldierForeign"],[682,705,"SO","299",1588257735,"soldierForeign"],[628,676,"NW","299",1588257739,"soldierForeign"],[627,616,"N","310",1588257743,"soldierForeign"],[700,580,"NO","310",1588257748,"soldierForeign"],[757,553,"NO","310",1588257752,"soldierForeign"],[819,520,"NO","299",1588257757,"soldierForeign"],[857,503,"NO","299",1588257760,"soldierForeign"],[967,440,"NO","310",1588257768,"soldierForeign"],[927,404,"NW","299",1588257772,"soldierForeign"],[967,380,"NO","299",1588257775,"soldierForeign"],[1059,333,"NO","303",1588257782,"soldierForeign"],[1094,350,"SO","303",1588257785,"soldierForeign"],[1122,349,"O","299",1588257786,"soldierForeign"],[1168,377,"SO","310",1588257790,"soldierForeign"]],1588257683,"\u00a1Aqu\u00ed se vive mejor que en Atenas!",1588257790,0],["bird6","walkers",[[418,857,"none","350",1588257669,"bird"],[418,857,"N","350",1588257669,"bird"],[290,393,"N","350",1588257682,"bird"],[324.61538461538,374.38461538462,"N","350",1588257683,"bird"],[740,151,"NO","350",1588257695,"bird"],[1366,188,"O","350",1588257712,"bird"],[1512,624,"S","350",1588257724,"bird"],[1870,901,"SO","350",1588257736,"bird"]],1588257683,"",1588257736,0],["bird7","walkers",[[418,857,"none","350",1588257670,"bird"],[418,857,"N","350",1588257670,"bird"],[290,393,"N","350",1588257683,"bird"],[290,393,"N","350",1588257683,"bird"],[740,151,"NO","350",1588257696,"bird"],[1366,188,"O","350",1588257713,"bird"],[1512,624,"S","350",1588257725,"bird"],[1870,901,"SO","350",1588257737,"bird"]],1588257683,"",1588257737,0],["bird8","walkers",[[388,843,"none","350",1588257670,"bird"],[388,843,"N","350",1588257670,"bird"],[260,379,"N","350",1588257683,"bird"],[260,379,"N","350",1588257683,"bird"],[710,137,"NO","350",1588257696,"bird"],[1336,174,"O","350",1588257713,"bird"],[1482,610,"S","350",1588257725,"bird"],[1840,887,"SO","350",1588257737,"bird"]],1588257683,"",1588257737,0],["bird9","walkers",[[397,848,"none","350",1588257672,"bird"],[397,848,"N","350",1588257672,"bird"],[288.69230769231,455.38461538462,"N","350",1588257683,"bird"],[269,384,"N","350",1588257685,"bird"],[719,142,"NO","350",1588257698,"bird"],[1345,179,"O","350",1588257715,"bird"],[1491,615,"S","350",1588257727,"bird"],[1849,892,"SO","350",1588257739,"bird"]],1588257683,"",1588257739,0],["bird10","walkers",[[410,753,"none","350",1588257671,"bird"],[410,753,"N","350",1588257671,"bird"],[291.84615384615,324.69230769231,"N","350",1588257683,"bird"],[282,289,"N","350",1588257684,"bird"],[732,47,"NO","350",1588257697,"bird"],[1358,84,"O","350",1588257714,"bird"],[1504,520,"S","350",1588257726,"bird"],[1862,797,"SO","350",1588257738,"bird"]],1588257683,"",1588257738,0],["bird11","walkers",[[388,702,"none","350",1588257673,"bird"],[388,702,"N","350",1588257673,"bird"],[289.53846153846,345.07692307692,"N","350",1588257683,"bird"],[260,238,"N","350",1588257686,"bird"],[710,-4,"NO","350",1588257699,"bird"],[1336,33,"O","350",1588257716,"bird"],[1482,469,"S","350",1588257728,"bird"],[1840,746,"SO","350",1588257740,"bird"]],1588257683,"",1588257740,0],["walkerProduction_resource_3188","walkers",[[112,-49,"none","299",1588257465,"resourceWalker"],[112,-49,"SO","299",1588257465,"resourceWalker"],[163,13,"SO","299",1588257470,"resourceWalker"],[241,59,"SO","299",1588257476,"resourceWalker"],[267,105,"SO","299",1588257480,"resourceWalker"],[314,128,"SO","299",1588257483,"resourceWalker"],[407,183,"SO","299",1588257491,"resourceWalker"],[430,230,"SO","299",1588257494,"resourceWalker"],[487,261,"SO","299",1588257498,"resourceWalker"],[514,276,"SO","310",1588257501,"resourceWalker"],[540,290,"SO","310",1588257502,"resourceWalker"],[548,323,"S","299",1588257505,"resourceWalker"],[777,444,"SO","299",1588257522,"resourceWalker"],[857,462,"O","310",1588257528,"resourceWalker"],[777,444,"W","310",1588257533,"resourceWalkerEmpty"],[548,323,"NW","299",1588257550,"resourceWalkerEmpty"],[540,290,"N","299",1588257553,"resourceWalkerEmpty"],[514,276,"NW","310",1588257554,"resourceWalkerEmpty"],[487,261,"NW","310",1588257557,"resourceWalkerEmpty"],[430,230,"NW","299",1588257561,"resourceWalkerEmpty"],[407,183,"NW","299",1588257564,"resourceWalkerEmpty"],[314,128,"NW","299",1588257572,"resourceWalkerEmpty"],[267,105,"NW","299",1588257575,"resourceWalkerEmpty"],[241,59,"NW","299",1588257579,"resourceWalkerEmpty"],[163,13,"NW","299",1588257585,"resourceWalkerEmpty"],[112,-49,"NW","299",1588257590,"resourceWalkerEmpty"],[112,-49,"none","299",1588257683,"resourceWalkerEmpty"],[112,-49,"none","299",1588257686,"resourceWalkerEmpty"]],1588257683,"\u00bfQu\u00e9 es lo que hace el alcalde con todos esos recursos?<br>Producci\u00f3n: <img src=\"skin\/resources\/icon_wood_small.png\" \/> +207 por hora",9223372036854775807,0]]},"displayStaticPlague":false,"dailyTasks":"2","cityCinema":"invisible","flyingTrader":{"link":{"onclick":"ajaxHandlerCall(this.href);return false;","href":"?view=premium&linkType=3","tooltip":"Tienda"},"banner":""}}],["updateTemplateData",""],["popupData",null],["ingameCounterData",null],["removeIngameCounterData",null],["updateBacklink",null]]);
+            });
+        </script>
+        </body>
+        </html>

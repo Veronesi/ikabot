@@ -1,4 +1,4 @@
-class City {
+module.exports = class City {
 
     name;
     id;
@@ -11,8 +11,8 @@ class City {
     underConstruction;
     endUpgradeTime;
     startUpgradeTime;
-
-    constructor({ name, id, phase, isCapital, islandId, islandName, islandXCoord, islandYCoord, underConstruction, endUpgradeTime, startUpgradeTime }) {
+    position;
+    constructor({ name, id, phase, isCapital, islandId, islandName, islandXCoord, islandYCoord, underConstruction, endUpgradeTime, startUpgradeTime, position }) {
         this.name = name || "";
         this.id = id || "";
         this.phase = phase || "";
@@ -24,5 +24,6 @@ class City {
         this.underConstruction = underConstruction || "";
         this.endUpgradeTime = endUpgradeTime || "";
         this.startUpgradeTime = startUpgradeTime || "";
+        this.position = position || "";
     }
 }

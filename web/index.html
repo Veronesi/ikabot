@@ -17,19 +17,20 @@
             </div>
         </div>
         <div class="col p-0 m-3">
-            <div class="container border p-3">
-                <div class="form-group">
-                    <span class="btn btn-block btn-primary" id="density-population">Density Population! =D</span>
+            <div class="container">
+                <div class="row border p-3">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <span class="btn btn-block btn-primary" id="density-population">Density Population! =D</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Ally</label>
+                            <select class="form-control" id="ally-list">
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Ally</label>
-                    <select class="form-control" id="ally-list">
-                    </select>
-                </div>
-                <div class="form-group">
-                    <span class="btn btn-block btn-primary" id="scan-by-ally">Scan!</span>
-                </div>
-                <div class="row pt-5">
+                <div class="row pt-5 border p-3 mt-3">
                     <div class="col-6">
                         <div class="form-group">
                             <label for="formControlRange">Resource</label>
@@ -62,12 +63,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Players</label>
-                    <input type="text" class="form-control" placeholder="filter player..." id="filter-player">
-                    <select class="form-control mt-1" id="player-list" multiple style="height: 200px;">
-                    </select>
+                <div class="row border p-3 mt-3">
+                    <div class="col-12">
+                        <label for="exampleFormControlSelect1">Players</label>
+                        <input type="text" class="form-control" placeholder="filter player..." id="filter-player">
+                        <select class="form-control mt-1" id="player-list" multiple style="height: 200px;">
+                        </select>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>

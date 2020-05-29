@@ -20,7 +20,7 @@ players.forEach((player, i) => {
     })
 })
 
-document.querySelector('#scan-by-ally').onclick = () => {
+document.querySelector('#ally-list').onchange = () => {
     Ikariam.map.paint.densityAlly({ ownerAllyId: document.querySelector('#ally-list').value })
 }
 

@@ -9,6 +9,7 @@ node_modules/
 islands.json*
 allies.json*
 players.json*
+_islands.json*
 islands.js*
 allies.js*
 players.js*

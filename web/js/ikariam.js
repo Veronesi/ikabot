@@ -8,7 +8,7 @@ const Ikariam = {
     map: {
         clear() {
             document.querySelector(Ikariam.el).innerHTML = ''
-            for (let i = 0; i < Ikariam.map.width + 1; i++) {
+            for (let i = 0; i <= Ikariam.map.width + 1; i++) {
 
                 new Ejx({
                     type: 'div',
@@ -16,7 +16,7 @@ const Ikariam = {
                     render: true,
                     props: [{ name: 'id', value: `col-${i}` }]
                 })
-                for (let j = 0; j < Ikariam.map.height + 1; j++) {
+                for (let j = 0; j <= Ikariam.map.height + 1; j++) {
                     new Ejx({
                         type: 'div',
                         parent: `#col-${i}`,

@@ -15,8 +15,8 @@ rl.question('email: ', email => {
       console.table(res)
       rl.question('Selecciona una cuenta (id): ', id => {
         Ikariam.session.selectAccount(id, res => {
-          //scanIsland(5578, 5722) //5721
-          highscoreAlly(0, 3)
+          scanIsland(0, 5721) //5721
+          //highscoreAlly(0, 3)
         })
       });
       //rl.close();

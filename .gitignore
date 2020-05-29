@@ -2,12 +2,16 @@
 
 # dependencies
 node_modules/
-/web
-web/
+
 /node_modules
 /.pnp
 .pnp.js
-
+islands.json*
+allies.json*
+players.json*
+islands.js*
+allies.js*
+players.js*
 # testing
 /coverage
 

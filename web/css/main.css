@@ -1,0 +1,107 @@
+#map {
+    position: relative;
+    width: 1010px;
+}
+
+.island {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
+}
+
+.red {
+    background-color: #0026FF;
+}
+
+.green {
+    background-color: #4CFF00;
+}
+
+.wine {
+    background-color: violet;
+}
+
+.marble {
+    background-color: gray;
+}
+
+.glass {
+    background-color: lightskyblue;
+}
+
+.sulfur {
+    background-color: yellow;
+}
+
+.density-0 {
+    background-color: #6c757d;
+}
+
+.density-1 {
+    background-color: #84B54F
+}
+
+.density-2 {
+    background-color: #95BD57
+}
+
+.density-3 {
+    background-color: #94BC56
+}
+
+.density-4 {
+    background-color: #A4C35D
+}
+
+.density-5 {
+    background-color: #B5CB64
+}
+
+.density-6 {
+    background-color: #C6D26B
+}
+
+.density-7 {
+    background-color: #D6D972
+}
+
+.density-8 {
+    background-color: #E6E079
+}
+
+.density-9 {
+    background-color: #F7E780
+}
+
+.density-10 {
+    background-color: #FADB7B
+}
+
+.density-11 {
+    background-color: #F3BF6B
+}
+
+.density-12 {
+    background-color: #EDA75E
+}
+
+.density-13 {
+    background-color: #E58D4F
+}
+
+.density-14 {
+    background-color: #DE7240
+}
+
+.density-15 {
+    background-color: #D6542F
+}
+
+.density-16 {
+    background-color: #7F0000
+}
+
+.density-17 {
+    background-color: #440000
+}

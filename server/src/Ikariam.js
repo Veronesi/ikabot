@@ -56,10 +56,9 @@ const Ikariam = {
         post: ({ url = '', rq = {}, form = {}, body = {} }, success = (response, body) => { }) => {
             request.post(url, { headers: Ikariam.request.headers, rq, form, body, json: true },
                 function (error, request, body) {
-                    console.log(url);
-                    Ikariam.request.lastHeaders = request.headers
+                    Ikariam.request.lastHeaders = request ? request.headers : Ikariam.request.lastHeaders;
                     Ikariam.request.lastBody = body
-                    if (request.headers['set-cookie'])
+                    if (request && request.headers['set-cookie'])
                         Ikariam.request.lastCookies = request.headers['set-cookie'][0]
                     success(request, body)
                 });
@@ -68,7 +67,7 @@ const Ikariam = {
         get: ({ url = '', rq = {} }, success = (response, body) => { }) => {
             request.get(url, { headers: Ikariam.request.headers, rq },
                 function (error, request, body) {
-                    console.log(url);
+                    //console.log(url);
                     Ikariam.request.lastHeaders = request.headers
                     Ikariam.request.lastBody = body
                     if (request.headers['set-cookie'])
@@ -79,6 +78,18 @@ const Ikariam = {
     },
 
     screenshot: {
+        highscoreAlly: ({offset}, success) => {
+            Ikariam.request.post({url: `${Ikariam.request.urlbase}`, form: {'view': 'highscoreAlly', 'highscoreType': 'score', 'offset': offset, 'backgroundView': 'city', 'templateView': 'highscoreAlly', 'smb': 'Enviar','searchAlliance': '', 'searchAllianceTag': '', 'ajax': '1' }}, async (response, body) => {
+                fs.writeFileSync(`./src/cache/screenshots/viewCity.html`, body[1][1][1])
+                success(body)
+            });
+        },
+        highscore: ({offset}, success) => {
+            Ikariam.request.post({url: `${Ikariam.request.urlbase}`, form: {'view': 'highscore', 'highscoreType': 'score', 'offset': offset, 'backgroundView': 'city', 'templateView': 'highscore', 'smb': 'Enviar','searchUser': '', 'ajax': '1' }}, async (response, body) => {
+                fs.writeFileSync(`./src/cache/screenshots/viewCity.html`, body[1][1][1])
+                success(body)
+            });
+        },
         changeCurrentCity: (cityId, success = () => { }) => {
             console.log(cityId)
             Ikariam.request.post({
@@ -128,6 +139,24 @@ const Ikariam = {
                 })     
             })
         },
+        viewIsland: ({xcoord = 0, ycoord = 0}, success = () => {}) => {
+            console.log(`x: ${xcoord}, y: ${ycoord}`)
+            Ikariam.request.get({url: `${Ikariam.request.urlbase}view=island&xcoord=${xcoord}&ycoord=${ycoord}`}, async (response, body) => {
+                fs.writeFileSync(`./src/cache/screenshots/viewCity.html`, body)
+                //let _ = body.match(regex.Responder)
+                //_ = JSON.parse(`{"response": ${_[1]}}`)
+                //console.log(_.response[0][1].cities)
+                success(body)
+            });
+        },
+        viewIslandById: ({islandId = 0}, success = () => {}) => {
+            console.log(`islandId: ${islandId}`)
+            Ikariam.request.get({url: `${Ikariam.request.urlbase}view=island&islandId=${islandId}`}, async (response, body) => {
+                //fs.writeFileSync(`./src/cache/screenshots/viewCity.html`, body)
+                success(body)
+            });
+        },
+
         viewCity: (success = () => { }) => {
             Ikariam.request.get({ url: `${Ikariam.request.urlbase}view=city` }, async (response, body) => {
                 let _ = body.match(regex.IkariamGetClass).groups
@@ -273,7 +302,6 @@ const Ikariam = {
 
                 form = { credentials: { email, password, language: "es", kid: "", autoLogin: "false" } };
                 Ikariam.request.post({ url: 'https://lobby.ikariam.gameforge.com/api/users', form }, (response, body) => {
-                    console.log(email, password)
                     if (response.statusCode == 400) {
                         onError()
                         console.log('Usuario o contraseña incorrecta')

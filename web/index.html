@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="row m-0">
+        <div class="col p-0">
+            <div id="map">
+            </div>
+        </div>
+        <div class="col p-0 m-3">
+            <div class="container border p-3">
+                <div class="form-group">
+                    <span class="btn btn-block btn-primary" id="density-population">Density Population! =D</span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Ally</label>
+                    <select class="form-control" id="ally-list">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <span class="btn btn-block btn-primary" id="scan-by-ally">Scan!</span>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="formControlRange">Resource</label>
+                            <input type="number" class="form-control" placeholder="Wood" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="formControlRange">Lv Resource</label>
+                            <input type="number" class="form-control" id="lv-resource" value="20">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="formControlRange">Tradegood</label>
+                            <select class="form-control" id="tradegood-list">
+                                <option value="0">All</option>
+                                <option value="1">Wine</option>
+                                <option value="2">Marble</option>
+                                <option value="3">Sulfur</option>
+                                <option value="4">Glass</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="formControlRange">Lv Tradegood</label>
+                            <input type="number" class="form-control" id="lv-tradegood" value="20">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <span class="btn btn-block btn-primary" id="scan-by-resource">Scan!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Players</label>
+                    <select class="form-control" id="player-list">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <span class="btn btn-block btn-primary" id="find-player">find player</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/ejx.js"></script>
+    <script src="./js/islands.js"></script>
+    <script src="./js/players.js"></script>
+    <script src="./js/allies.js"></script>
+    <script src="./js/ikariam.js"></script>
+    <script src="./js/core.js"></script>
+</body>
+
+</html>

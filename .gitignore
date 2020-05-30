@@ -6,10 +6,9 @@ node_modules/
 /node_modules
 /.pnp
 .pnp.js
-islands.json*
-allies.json*
-players.json*
-_islands.json*
+*.json
+*_es.js
+*_ar.js
 islands.js*
 allies.js*
 players.js*

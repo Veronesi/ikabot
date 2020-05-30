@@ -25,10 +25,10 @@ document.querySelector('#ally-list').onchange = () => {
 }
 
 document.querySelector('#scan-by-resource').onclick = () => {
-    let resourceLevel = document.querySelector('#lv-resource').value
-    let tradegood = document.querySelector('#tradegood-list').value
+    let resourceLevel = Number(document.querySelector('#lv-resource').value)
+    let tradegood = Number(document.querySelector('#tradegood-list').value)
     tradegood = tradegood == 0 ? [1, 2, 3, 4] : [Number(tradegood)];
-    let tradegoodLevel = document.querySelector('#lv-tradegood').value
+    let tradegoodLevel = Number(document.querySelector('#lv-tradegood').value)
     Ikariam.map.paint.filterResources({ resourceLevel, tradegoodLevel, tradegood })
 }
 

@@ -15,8 +15,8 @@ rl.question('email: ', email => {
       console.table(res)
       rl.question('Selecciona una cuenta (id): ', id => {
         Ikariam.session.selectAccount(id, res => {
-          scanIsland(0, 5721) //5721
-          //highscoreAlly(0, 3)
+          //scanIsland(4316, 5721) //5721
+          scanHighscore(0, 100)
         })
       });
       //rl.close();
@@ -32,7 +32,7 @@ function highscoreAlly(page, max) {
       if(_){
         let ally = _.map(e => regex.allyHighscore.exec(e).groups)
         console.table(ally)
-        fs.appendFile(`./src/cache/database/allies.json`, `${JSON.stringify(ally).slice(1,-1)},\n`, function (err) {
+        fs.appendFile(`./src/cache/database/allies_${Ikariam.server.language}-${Ikariam.server.number}.json`, `${JSON.stringify(ally).slice(1,-1)},\n`, function (err) {
         });
         highscoreAlly(page + 1, max)
         console.log(`${page}/${max}`);
@@ -49,7 +49,7 @@ function scanHighscore(page, max) {
       if(_){
         let player = _.map(e => regex.playerHighscore.exec(e).groups)
         console.table(player)
-        fs.appendFile(`./src/cache/database/players.json`, `${JSON.stringify(player).slice(1,-1)},\n`, function (err) {
+        fs.appendFile(`./src/cache/database/players_${Ikariam.server.language}-${Ikariam.server.number}.json`, `${JSON.stringify(player).slice(1,-1)},\n`, function (err) {
         });
         scanHighscore(page + 1, max)
         console.log(`${page}/${max}`);
@@ -94,7 +94,7 @@ function scanIsland(islandId, max) {
             }
           })
         }
-        fs.appendFile(`./src/cache/database/islands.json`, `${JSON.stringify(island)},\n`, function (err) {
+        fs.appendFile(`./src/cache/database/islands_${Ikariam.server.language}-${Ikariam.server.number}.json`, `${JSON.stringify(island)},\n`, function (err) {
           if (err) throw err;
           console.log('Saved!');
         });
